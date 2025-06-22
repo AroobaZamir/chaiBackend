@@ -15,6 +15,10 @@ app.get("/twitter", (req, res)=>{
 app.get("/login", (res, req)=>{
     res.send( "<h1>Plsease login to the TechyKite you tube channel</h1>")
 })
+
+app.get('/github', (req, res)=>{
+    res.json("this contain the github data")
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
